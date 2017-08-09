@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+  buttons = [true, true, true, true, true, true, true, true, true, true];
+
+  toggle(i){
+  	this.buttons[i] = !this.buttons[i];
+  }
 }
